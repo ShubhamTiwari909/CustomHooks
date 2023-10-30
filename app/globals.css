@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.desktop {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+
+@media screen and (min-width:1251px) {
+    .desktop {
+        display: grid;
+    }
+    .mobile {
+        display: none;
+    }
+}
